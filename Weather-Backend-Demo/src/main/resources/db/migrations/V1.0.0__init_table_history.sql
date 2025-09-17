@@ -1,7 +1,7 @@
 CREATE TABLE weather.history_items
 (
     id           BIGSERIAL PRIMARY KEY,
-    type         VARCHAR(10)              NOT NULL,
+    type         VARCHAR(20)              NOT NULL,
     city         VARCHAR(100),
     country_code VARCHAR(50),
     lon          NUMERIC,
