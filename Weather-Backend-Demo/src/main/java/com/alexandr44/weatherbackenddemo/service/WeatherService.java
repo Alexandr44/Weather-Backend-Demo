@@ -32,6 +32,13 @@ public class WeatherService {
         return weatherMapper.map(response.getBody());
     }
 
+    public WeatherDto getWeatherByCoordinates(final Double lon, final Double lat) {
+        final ResponseEntity<OpenWeatherResponse> response = weatherClient.getWeatherByCoordinates(
+            lon, lat, apiKey, units, language
+        );
+        return weatherMapper.map(response.getBody());
+    }
+
     private String buildQuery(final String city, final String countryCode) {
         if (countryCode == null || countryCode.isEmpty()) {
             return city;
