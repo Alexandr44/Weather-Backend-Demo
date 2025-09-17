@@ -1,6 +1,18 @@
 spring:
   application:
     name: Weather-Backend-Demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres!
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      schema: weather
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: "classpath:db/migrations"
+    schemas: weather
 
   feign:
     urls:
@@ -10,3 +22,7 @@ weather:
   api-key: ${WEATHER-API-KEY}
   units: metric
   lang: ru
+
+logging:
+  level:
+    com.alexandr44: DEBUG
