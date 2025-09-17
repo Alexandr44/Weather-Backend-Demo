@@ -34,5 +34,4 @@ public class WeatherController {
         return ResponseEntity.ok(weatherService.getWeatherByCoordinates(lon, lat));
     }
 
-
 }
