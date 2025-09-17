@@ -17,4 +17,13 @@ public interface WeatherClient {
         @RequestParam("lang") String lang
     );
 
+    @GetMapping("/weather")
+    ResponseEntity<OpenWeatherResponse> getWeatherByCoordinates(
+        @RequestParam("lon") Double lon,
+        @RequestParam("lat") Double lat,
+        @RequestParam("appid") String openWeatherMapKey,
+        @RequestParam("units") String units,
+        @RequestParam("lang") String lang
+    );
+
 }

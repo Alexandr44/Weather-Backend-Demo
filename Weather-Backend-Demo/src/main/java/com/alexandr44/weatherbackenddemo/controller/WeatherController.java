@@ -26,4 +26,13 @@ public class WeatherController {
         return ResponseEntity.ok(weatherService.getWeatherByCity(city, countryCode));
     }
 
+    @GetMapping("/weather-by-coord")
+    public ResponseEntity<WeatherDto> getWeatherByCoordinates(
+        @RequestParam Double lon,
+        @RequestParam Double lat
+    ) {
+        return ResponseEntity.ok(weatherService.getWeatherByCoordinates(lon, lat));
+    }
+
+
 }

@@ -1,5 +1,6 @@
 package com.alexandr44.weatherbackenddemo.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;
@@ -38,12 +39,17 @@ public class OpenWeatherResponse {
     @Data
     public static class Main {
         private Double temp;
+        @JsonProperty("feels_like")
         private Double feelsLike;
+        @JsonProperty("temp_min")
         private Double tempMin;
+        @JsonProperty("temp_max")
         private Double tempMax;
         private Integer pressure;
         private Integer humidity;
+        @JsonProperty("sea_level")
         private Integer seaLevel;
+        @JsonProperty("grnd_level")
         private Integer grndLevel;
     }
 
