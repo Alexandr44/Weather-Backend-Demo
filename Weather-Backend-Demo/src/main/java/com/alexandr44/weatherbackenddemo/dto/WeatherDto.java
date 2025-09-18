@@ -9,8 +9,8 @@ public class WeatherDto {
 
     private String city;
     private String countryCode;
-    private String longitude;
-    private String latitude;
+    private Double longitude;
+    private Double latitude;
     private LocalDateTime timestamp;
     private Weather weather;
 
