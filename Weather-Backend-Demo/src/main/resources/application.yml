@@ -26,3 +26,15 @@ weather:
 logging:
   level:
     com.alexandr44: DEBUG
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+  packages-to-scan: com.alexandr44.weatherbackenddemo.controller
+  paths-to-match: /api/v1/**
+  security:
+    - basicAuth: [ ]

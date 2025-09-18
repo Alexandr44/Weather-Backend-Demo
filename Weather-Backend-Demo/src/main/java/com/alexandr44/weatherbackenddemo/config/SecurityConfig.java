@@ -22,7 +22,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(authorize -> authorize
                 .requestMatchers("/api/v1/weather*", "/api/v1/history*").authenticated()
-                .anyRequest().denyAll()
+                .anyRequest().permitAll()
             )
             .httpBasic(Customizer.withDefaults());
         return http.build();
