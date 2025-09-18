@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: Weather-Backend-Demo
+  datasource:
+    name: testdb
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;NON_KEYWORDS=KEY,VALUE;
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+    hikari:
+      schema: PUBLIC
+    flyway:
+      enabled: true
+      baseline-on-migrate: true
+      locations: "classpath:testdb/migrations"
+      schemas: ${SPRING_FLYWAY_SCHEMAS}
+      validate-migration-naming: true
+    h2:
+      console:
+        enabled: true
+
+  feign:
+    urls:
+      weather-api: "http://localhost:8080/weather-api"
+
+weather:
+  api-key: 123
+  units: metric
+  lang: ru
+
+logging:
+  level:
+    com.alexandr44: DEBUG

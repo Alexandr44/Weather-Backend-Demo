@@ -1,0 +1,11 @@
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (1, 'CITY', 'Moscow', null, null, null, '2025-09-17 12:29:16.209642 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (2, 'CITY', 'Ufa', 'RU', null, null, '2025-09-17 22:38:56.898325 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (3, 'CITY', 'Ufa', 'RU', null, null, '2025-09-17 22:38:59.094044 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (4, 'CITY', 'Ufa', 'RU', null, null, '2025-09-17 22:39:01.319407 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (5, 'CITY', 'Ufa', null, null, null, '2025-09-17 22:39:03.445254 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (6, 'CITY', 'Ufa', null, null, null, '2025-09-17 22:39:04.928639 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (7, 'COORDINATES', null, null, 56.0375, 54.775, '2025-09-17 22:39:11.701778 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (8, 'COORDINATES', null, null, 56.0375, 54.775, '2025-09-17 22:39:13.756343 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (9, 'COORDINATES', null, null, 56.0375, 54.775, '2025-09-17 22:39:15.786036 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (10, 'COORDINATES', null, null, 56.0375, 54.775, '2025-09-17 22:39:16.442228 +00:00');
+INSERT INTO weather.history_items (id, type, city, country_code, lon, lat, created_at) VALUES (11, 'COORDINATES', null, null, 56.0375, 54.775, '2025-09-17 22:39:20.826615 +00:00');
